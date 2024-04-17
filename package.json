@@ -44,5 +44,8 @@
     "simplex-noise": "^4.0.1",
     "tailwind-merge": "^2.2.2",
     "three": "^0.161.0"
+  },
+  "engines": {
+    "node": ">=21"
   }
 }
