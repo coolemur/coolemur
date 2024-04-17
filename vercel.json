@@ -1,14 +1,3 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/node",
-      "config": { "NODE_OPTIONS": "--max-old-space-size=8192" }
-    }
-  ],
-  "build": {
-    "env": {
-      "NPM_CONFIG_LEGACY_PEER_DEPS": "true"
-    }
-  }
+  "installCommand": "bun install --legacy-peer-deps"
 }
