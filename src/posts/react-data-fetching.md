@@ -90,7 +90,7 @@ export default function useComments() {
 }
 ```
 
-```jsx
+```tsx
 // App.tsx
 
 import React, { useState, useMemo } from 'react';

@@ -199,6 +199,14 @@
   }
 
   :global(article .content pre) {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
     white-space: pre-wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  :global(article .content pre code) {
+    margin: 0;
   }
 </style>

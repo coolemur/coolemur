@@ -8,7 +8,7 @@ published: true
 
 ## Cutom hook template
 
-```
+```tsx
 import { useState, useEffect } from 'react'; // Import necessary hooks
 
 function useCustomHookName(initialValue) {
@@ -26,7 +26,7 @@ function useCustomHookName(initialValue) {
   };
 
   // 4. Return values
-  return { stateValue, setStateValue, functionA, /* other values */ };
+  return { stateValue, setStateValue, functionA /* other values */ };
 }
 
 export default useCustomHookName;
