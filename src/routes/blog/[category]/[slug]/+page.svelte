@@ -202,7 +202,6 @@
   :global(article code) {
     display: block !important; /* Maintains block behavior for background styling */
     padding: 1rem 2rem !important;
-    border-radius: 0.5rem !important;
     background-color: #f3f4f6 !important;
     color: #1e293b !important;
     white-space: pre-wrap !important; /* Allows natural word wrapping */
@@ -214,5 +213,13 @@
   :global(article code span) {
     display: inline !important; /* Ensures spans do not create new block lines */
     white-space: inherit !important; /* Inherits wrapping settings from parent code element */
+  }
+
+  :global(article pre[class*='language-']) {
+    border-radius: 0.5rem;
+    border-left: 2px solid var(--color-highlight-dark);
+    box-shadow:
+      -1px 0 0 0 var(--color-highlight),
+      0 0 0 1px #dfdfdf;
   }
 </style>
