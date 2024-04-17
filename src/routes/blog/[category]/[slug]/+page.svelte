@@ -124,17 +124,6 @@
     margin-bottom: 1.5rem;
   }
 
-  :global(article code) {
-    display: inline-block;
-    padding: 1rem 2rem;
-    margin: 1rem 0.25rem 0 0.25rem;
-    border-radius: 0.5rem;
-    background-color: #f3f4f6;
-    color: #1e293b;
-    width: 100%;
-    margin-bottom: 1.5rem;
-  }
-
   :global(article .content > *:last-child) {
     margin-bottom: 0;
   }
@@ -208,5 +197,22 @@
 
   :global(article .content pre code) {
     margin: 0;
+  }
+
+  :global(article code) {
+    display: block !important; /* Maintains block behavior for background styling */
+    padding: 1rem 2rem !important;
+    border-radius: 0.5rem !important;
+    background-color: #f3f4f6 !important;
+    color: #1e293b !important;
+    white-space: pre-wrap !important; /* Allows natural word wrapping */
+    word-wrap: break-word !important; /* Ensures long words do not overflow */
+    overflow-wrap: break-word !important; /* Alternative to word-wrap */
+    font-family: monospace !important; /* Ensures consistent font for code blocks */
+  }
+
+  :global(article code span) {
+    display: inline !important; /* Ensures spans do not create new block lines */
+    white-space: inherit !important; /* Inherits wrapping settings from parent code element */
   }
 </style>
