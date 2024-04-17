@@ -35,7 +35,7 @@ export async function load({ fetch, params, url }) {
     title: '𓁹‿𓁹',
     pathname: url.pathname,
     // pageEnd: show >= posts.length,
-    // showMoreEnabled: postsLength > PAGE_SIZE,
+    showMoreEnabled: postsLength > PAGE_SIZE,
     showMore: !(show >= posts.length) && postsLength > PAGE_SIZE
   };
 }

@@ -71,30 +71,32 @@
     </div>
 
     <div class="mt-16 flex justify-center">
-      <button
-        class="group bg-highlight hover:bg-highlight-dark flex transform-gpu cursor-pointer items-center gap-3 rounded-lg py-3 px-8 text-xl font-bold text-white shadow-lg transition hover:scale-105 hover:shadow-xl"
-        on:click={() => handleShow(data.showMore)}
-      >
-        {#if data.showMore}
-          <span>Show More</span>
-        {:else}
-          <span>Show Less</span>
-        {/if}
-
-        <svg
-          class="h-auto w-4 origin-center transition-transform duration-200 {data.showMore
-            ? 'rotate-0 group-hover:translate-y-0.5 '
-            : 'rotate-180 group-hover:-translate-y-0.5'}"
-          width="800"
-          height="800"
-          viewBox="0 -4.5 20 20"
+      {#if !data.pageEnd && data.showMoreEnabled}
+        <button
+          class="group bg-highlight hover:bg-highlight-dark flex transform-gpu cursor-pointer items-center gap-3 rounded-lg py-3 px-8 text-xl font-bold text-white shadow-lg transition hover:scale-105 hover:shadow-xl"
+          on:click={() => handleShow(data.showMore)}
         >
-          <path
-            fill="currentColor"
-            d="M.292.366c-.39.405-.39 1.06 0 1.464l8.264 8.563c.78.81 2.047.81 2.827 0l8.325-8.625c.385-.4.39-1.048.01-1.454a.976.976 0 0 0-1.425-.011l-7.617 7.893a.975.975 0 0 1-1.414 0L1.705.366a.974.974 0 0 0-1.413 0"
-          />
-        </svg>
-      </button>
+          {#if data.showMore}
+            <span>Show More</span>
+          {:else}
+            <span>Show Less</span>
+          {/if}
+
+          <svg
+            class="h-auto w-4 origin-center transition-transform duration-200 {data.showMore
+              ? 'rotate-0 group-hover:translate-y-0.5 '
+              : 'rotate-180 group-hover:-translate-y-0.5'}"
+            width="800"
+            height="800"
+            viewBox="0 -4.5 20 20"
+          >
+            <path
+              fill="currentColor"
+              d="M.292.366c-.39.405-.39 1.06 0 1.464l8.264 8.563c.78.81 2.047.81 2.827 0l8.325-8.625c.385-.4.39-1.048.01-1.454a.976.976 0 0 0-1.425-.011l-7.617 7.893a.975.975 0 0 1-1.414 0L1.705.366a.974.974 0 0 0-1.413 0"
+            />
+          </svg>
+        </button>
+      {/if}
     </div>
   </div>
 </section>
