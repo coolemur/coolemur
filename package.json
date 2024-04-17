@@ -48,12 +48,5 @@
   },
   "engines": {
     "node": ">=20"
-  },
-  "overrides": {
-    "mdsvex": {
-      "peerDependencies": {
-        "svelte": "*"
-      }
-    }
   }
 }
