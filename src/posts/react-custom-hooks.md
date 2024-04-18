@@ -47,19 +47,19 @@ export default useCustomHookName;
 
 ### Example of a Custom Hook without useEffect
 
-```
+```tsx
 import { useState } from 'react';
 
 function useWindowSize() {
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
-    height: window.innerHeight,
+    height: window.innerHeight
   });
 
   const handleResize = () => {
     setWindowSize({
       width: window.innerWidth,
-      height: window.innerHeight,
+      height: window.innerHeight
     });
   };
 
