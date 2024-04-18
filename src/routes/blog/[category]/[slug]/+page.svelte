@@ -196,23 +196,13 @@
   }
 
   :global(article .content pre code) {
-    margin: 0;
-  }
-
-  :global(article code) {
-    display: block !important; /* Maintains block behavior for background styling */
-    padding: 1rem 2rem !important;
-    background-color: #f3f4f6 !important;
-    color: #1e293b !important;
-    white-space: pre-wrap !important; /* Allows natural word wrapping */
-    word-wrap: break-word !important; /* Ensures long words do not overflow */
-    overflow-wrap: break-word !important; /* Alternative to word-wrap */
-    font-family: monospace !important; /* Ensures consistent font for code blocks */
-  }
-
-  :global(article code span) {
-    display: inline !important; /* Ensures spans do not create new block lines */
-    white-space: inherit !important; /* Inherits wrapping settings from parent code element */
+    padding: 1rem 2rem;
+    background-color: var(--color-white);
+    color: var(--color-dark-gray);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: monospace;
   }
 
   :global(article pre[class*='language-']) {
