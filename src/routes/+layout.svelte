@@ -15,6 +15,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <meta name="description" content="Coolemur blog. {$page.data.description}" />
 </svelte:head>
 <div class="app flex min-h-screen flex-col">
   <Header />

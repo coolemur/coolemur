@@ -23,7 +23,8 @@ export async function load({ params, url, fetch }) {
       slug: params.slug,
       content: post.default,
       meta: post.metadata,
-      title: post.metadata.title
+      title: post.metadata.title,
+      description: post.metadata.description
     };
   } catch (e) {
     error(404, {
