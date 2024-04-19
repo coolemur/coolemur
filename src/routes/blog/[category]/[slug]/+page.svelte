@@ -234,4 +234,17 @@
   :global(article .content pre code code.language-tsx) {
     color: var(--color-black);
   }
+
+  /* Code fade to indicate that there is something to scroll */
+
+  :global(article .content pre code:after) {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 </style>
