@@ -22,7 +22,7 @@
       >{data.meta.category}</a
     >
     <h1 class="text-3xl font-bold">{data.meta.title}</h1>
-    <p class="text-paper text-center">{data.meta.description}</p>
+    <p class="text-paper text-center text-lg">{data.meta.description}</p>
     <span class="text-sm font-bold">By Coolemur</span>
   </div>
 </section>

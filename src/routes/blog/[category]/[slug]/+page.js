@@ -24,7 +24,8 @@ export async function load({ params, url, fetch }) {
       content: post.default,
       meta: post.metadata,
       title: post.metadata.title,
-      description: post.metadata.description
+      description: post.metadata.description,
+      path: url.pathname
     };
   } catch (e) {
     error(404, {

@@ -16,6 +16,7 @@
     referrerpolicy="no-referrer"
   />
   <meta name="description" content="Coolemur blog. {$page.data.description}" />
+  <link rel="canonical" href="https://coolemur.vercel.app{$page.data.path}" />
 </svelte:head>
 <div class="app flex min-h-screen flex-col">
   <Header />
