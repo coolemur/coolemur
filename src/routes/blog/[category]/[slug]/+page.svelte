@@ -238,6 +238,7 @@
   /* Code fade to indicate that there is something to scroll */
 
   :global(article .content pre code:after) {
+    pointer-events: none;
     content: '';
     display: block;
     width: 100%;
