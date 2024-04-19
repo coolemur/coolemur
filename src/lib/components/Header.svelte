@@ -13,6 +13,7 @@
         class="before:bg-paper relative block size-10 before:absolute before:top-[50%] before:h-[80%] before:w-[1px] before:-translate-x-4 before:-translate-y-[50%] before:content-['']"
         href="https://github.com/coolemur"
         target="_blank"
+        aria-label="Github - Coolemur"
       >
         <svg class="hover:fill-highlight fill-white transition-colors" viewBox="-3 -3 30 30">
           <path

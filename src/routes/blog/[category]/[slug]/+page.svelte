@@ -212,4 +212,26 @@
       -1px 0 0 0 var(--color-highlight),
       0 0 0 1px #dfdfdf;
   }
+
+  /* Contrast colors for accessibility  */
+
+  :global(article .content pre code span.token.comment) {
+    color: #63717f;
+  }
+
+  :global(article .content pre code span.token.attr-value),
+  :global(article .content pre code span.token.keyword),
+  :global(article .content pre code span.token.class-name) {
+    color: #157ea1;
+  }
+
+  :global(article .content pre code span.token.attr-name),
+  :global(article .content pre code span.token.string),
+  :global(article .content pre code span.token.function) {
+    color: #278408;
+  }
+
+  :global(article .content pre code code.language-tsx) {
+    color: var(--color-black);
+  }
 </style>
