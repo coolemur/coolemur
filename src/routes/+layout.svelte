@@ -15,8 +15,9 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <meta name="description" content="Coolemur blog. {$page.data.description}" />
   <link rel="canonical" href="https://coolemur.vercel.app{$page.data.path}" />
+  <meta name="description" content="Coolemur blog. {$page.data.description}" />
+  <meta name="google-site-verification" content="UWsNYj8FFNsDu0NJo-hftEhdZiPah0lcfLLvbega35A" />
 </svelte:head>
 <div class="app flex min-h-screen flex-col">
   <Header />
