@@ -1,5 +1,5 @@
 <script>
-  import logo from '$lib/images/logo.webp?enhanced';
+  import logo from '$lib/images/logo.webp?enhanced&w=168';
 </script>
 
 <header class="fixed z-10 flex w-full items-center justify-center bg-black/20 py-1 text-white">
