@@ -19,7 +19,6 @@
         alt={`Illustration: ${title}` || '???'}
         src={image}
         loading="lazy"
-        sizes="(min-width:1920px) 471px, (min-width:1080px) 471px, (min-width:768px) 320px"
       />
       <div
         class="after:absolute after:top-0 after:right-0 after:bottom-0 after:left-0 after:bg-black/50 after:content-['']"

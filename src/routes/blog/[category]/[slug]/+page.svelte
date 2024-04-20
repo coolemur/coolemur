@@ -13,12 +13,7 @@
   <div
     class="absolute top-0 h-full w-full self-center object-cover after:absolute after:top-0 after:right-0 after:bottom-0 after:left-0 after:bg-black/50 after:content-['']"
   >
-    <enhanced:img
-      class="h-full w-full object-cover"
-      alt="Blog Image1"
-      src={image}
-      loading="lazy"
-      sizes="(min-width:1920px) 471px, (min-width:1080px) 471px, (min-width:768px) 320px"
+    <enhanced:img class="h-full w-full object-cover" alt="Blog Image1" src={image} loading="lazy" />
     />
   </div>
   <div class="relative flex max-w-[33rem] flex-col items-center gap-8">

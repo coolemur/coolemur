@@ -5,13 +5,7 @@
 <header class="fixed z-10 flex w-full items-center justify-center bg-black/20 py-1 text-white">
   <div class="relative flex w-full max-w-[90%] items-center justify-between">
     <a class="-translate-x-10" href="/">
-      <enhanced:img
-        class="h-12 w-auto object-cover"
-        alt="Blog logo"
-        src={logo}
-        loading="lazy"
-        sizes="(min-width:1920px) 84px, (min-width:1080px) 84px, (min-width:768px) 32px"
-      />
+      <enhanced:img class="h-12 w-auto object-cover" alt="Blog logo" src={logo} loading="lazy" />
     </a>
 
     <div class="flex items-center gap-9">
