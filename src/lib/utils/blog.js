@@ -1,11 +1,11 @@
-import slug1 from '$lib/assets/blog/image-1.png?enhanced';
-import slug2 from '$lib/assets/blog/image-2.png?enhanced';
-import slug3 from '$lib/assets/blog/trollface.webp?enhanced';
-import slug4 from '$lib/assets/blog/hooks.jpg?enhanced';
-import slug5 from '$lib/assets/blog/date.jpg?enhanced';
-import slug6 from '$lib/assets/blog/feet.jpg?enhanced';
-import slug7 from '$lib/assets/blog/data-flow.webp?enhanced';
-import slug8 from '$lib/assets/blog/testing.webp?enhanced';
+import slug1 from '$lib/assets/blog/image-1.png?enhanced&width=310';
+import slug2 from '$lib/assets/blog/image-2.png?enhanced&width=310';
+import slug3 from '$lib/assets/blog/trollface.webp?enhanced&width=310';
+import slug4 from '$lib/assets/blog/hooks.jpg?enhanced&width=310';
+import slug5 from '$lib/assets/blog/date.jpg?enhanced&width=310';
+import slug6 from '$lib/assets/blog/feet.jpg?enhanced&width=310';
+import slug7 from '$lib/assets/blog/data-flow.webp?enhanced&width=310';
+import slug8 from '$lib/assets/blog/testing.webp?enhanced&width=310';
 
 /**
  * @param {string} slug - The slug of the blog post.
