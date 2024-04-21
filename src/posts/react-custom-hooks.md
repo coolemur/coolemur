@@ -4,6 +4,7 @@ description: Reusable logic in react
 date: '2024-04-02'
 category: 'react'
 published: true
+image: hooks.jpg
 ---
 
 ## Cutom hook template

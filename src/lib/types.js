@@ -5,4 +5,5 @@
  * @property {string} description
  * @property {string} href
  * @property {string} slug
+ * @property {string} image
  */

@@ -4,6 +4,7 @@ description: Just why
 date: '2024-02-24'
 category: 'react'
 published: false
+image: trollface.webp
 ---
 
 ## Why React ?

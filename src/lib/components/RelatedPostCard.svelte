@@ -3,12 +3,12 @@
   import CardContainer from './ui/ThreeDCardEffect/CardContainer.svelte';
 
   import imageNotFound from '$lib/assets/blog/img-404.webp?enhanced';
-  import { getImage } from '$lib/utils/blog';
+  import { getImage } from '$lib/utils/images';
 
   /** @type {PostCardProps} */
-  let { date, title, description, href, slug } = $props();
+  let { date, title, description, href, slug, image } = $props();
 
-  let image = $derived(getImage(slug) || imageNotFound);
+  let src = $derived(getImage(image) || imageNotFound);
 </script>
 
 <CardContainer>
@@ -17,7 +17,7 @@
       <enhanced:img
         class="relative aspect-[420/350] object-cover"
         alt={`Illustration: ${title}` || '???'}
-        src={image}
+        {src}
         loading="lazy"
       />
       <div

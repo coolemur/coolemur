@@ -65,8 +65,8 @@
     </div>
 
     <div class="mt-8 grid grid-cols-1 gap-x-5 gap-y-12 sm:grid-cols-2 xl:grid-cols-4">
-      {#each data.posts as { date, title, description, category, slug }}
-        <PostCard {date} {title} {description} href={`/blog/${category}/${slug}`} {slug} />
+      {#each data.posts as { date, title, description, category, slug, image }}
+        <PostCard {date} {title} {description} href={`/blog/${category}/${slug}`} {slug} {image} />
       {/each}
     </div>
 

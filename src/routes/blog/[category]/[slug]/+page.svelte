@@ -1,19 +1,19 @@
 <script>
   import imageNotFound from '$lib/assets/blog/img-404-wide.webp?enhanced';
-  import { getImage } from '$lib/utils/blog';
+  import { getImage } from '$lib/utils/images';
   import RelatedPostCard from '$lib/components/RelatedPostCard.svelte';
 
   /** @type {import('./$types').PageData} */
   let { data } = $props();
 
-  let image = $derived(getImage(data.slug) || imageNotFound);
+  let src = $derived(getImage(data.meta.image, 'lg') || imageNotFound);
 </script>
 
 <section class="relative flex justify-center overflow-hidden bg-[#212529] pt-28 pb-20 text-white">
   <div
     class="absolute top-0 h-full w-full self-center object-cover after:absolute after:top-0 after:right-0 after:bottom-0 after:left-0 after:bg-black/50 after:content-['']"
   >
-    <enhanced:img class="h-full w-full object-cover" alt="Blog Image1" src={image} loading="lazy" />
+    <enhanced:img class="h-full w-full object-cover" alt="Blog Image1" {src} loading="lazy" />
     />
   </div>
   <div class="relative flex max-w-[33rem] flex-col items-center gap-8">
@@ -65,8 +65,15 @@
       <h2 class="text-dark-gray text-4xl font-bold">Related Posts</h2>
 
       <div class="mt-16 grid w-full grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
-        {#each data.relatedPosts as { date, title, description, category, slug }}
-          <RelatedPostCard {date} {title} {description} href={`/blog/${category}/${slug}`} {slug} />
+        {#each data.relatedPosts as { date, title, description, category, slug, image }}
+          <RelatedPostCard
+            {date}
+            {title}
+            {description}
+            href={`/blog/${category}/${slug}`}
+            {slug}
+            {image}
+          />
         {/each}
       </div>
     </div>

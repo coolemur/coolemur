@@ -4,6 +4,7 @@ description: Different ways to fetch data in React
 date: '2024-04-16'
 category: 'react'
 published: true
+image: data-flow.webp
 ---
 
 ## Some examples of fetching data in React

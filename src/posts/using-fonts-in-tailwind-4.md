@@ -4,6 +4,7 @@ description: By far easiest and fastest way to add fonts to your project
 date: '2024-04-07'
 category: 'tailwind'
 published: true
+image: image-1.png
 ---
 
 ## Tailwind Fonts Made Easy

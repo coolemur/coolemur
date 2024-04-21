@@ -4,6 +4,7 @@ description: Content too short and footer is not at the bottom of the page? Here
 date: '2024-04-14'
 category: 'tailwind'
 published: true
+image: feet.jpg
 ---
 
 ## Solution:

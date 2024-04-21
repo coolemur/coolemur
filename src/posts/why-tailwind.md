@@ -4,6 +4,7 @@ description: No pun intended, but Tailwind is a breeze to use
 date: '2024-03-19'
 category: 'tailwind'
 published: true
+image: image-2.png
 ---
 
 ## Everyone hates Tailwind, until they don't

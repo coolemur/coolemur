@@ -4,6 +4,7 @@ description: Everything about unit testing in React
 date: '2024-04-16'
 category: 'react'
 published: true
+image: testing.webp
 ---
 
 ## Tips for unit testing in React. To be continued...
