@@ -22,7 +22,7 @@
       class="hover:text-highlight font-roboto rounded-lg bg-white/15 py-1 px-3 text-sm font-bold uppercase transition-colors"
       >{data.meta.category}</a
     >
-    <h1 class="text-3xl font-bold">{data.meta.title}</h1>
+    <h1 class="text-center text-3xl font-bold">{data.meta.title}</h1>
     <p class="text-paper text-center text-lg">{data.meta.description}</p>
     <span class="text-sm font-bold">By Coolemur</span>
   </div>
@@ -125,7 +125,7 @@
     font-size: 0.75rem;
   }
 
-  :global(article p) {
+  :global(article .content p) {
     font-family: 'Lora';
     font-weight: 400;
     font-size: 0.875rem;

@@ -23,9 +23,6 @@ export async function load({ fetch, params, url }) {
   );
 
   const postsLength = postsFiltered.length;
-
-  console.log(postsLength);
-
   const postsSliced = postsFiltered.slice(0, show);
 
   return {

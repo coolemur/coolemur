@@ -50,5 +50,3 @@ export function getImage(filename, size = 'sm') {
       return imageModules[filename] || null;
   }
 }
-
-console.log(getImage('data-flow.webp')); // This should now log the correct module or null

@@ -35,7 +35,7 @@ export default function App() {
 
     fetchData();
 
-    console.log('Data fetched');
+    console.info('Data fetched');
   }, []); // Empty dependency array means this effect runs only once on mount
 
   // Using useMemo to memorize a calculated value based on the data
