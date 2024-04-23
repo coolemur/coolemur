@@ -1,3 +1,7 @@
+<script>
+  import Email from '$lib/components/Email.svelte';
+</script>
+
 <footer class="relative flex justify-center overflow-hidden bg-black/90 py-10 text-white md:py-28">
   <div
     class="absolute top-0 left-0 flex h-full w-full animate-[ping_10s_ease-in-out_infinite_alternate] items-center justify-center"
@@ -43,10 +47,7 @@
     </div>
     <div class="mr-8 flex flex-col gap-1 md:gap-3">
       <span class="mb-2 text-xl font-bold">Contact the Publisher</span>
-      <a
-        href="mailto:coolemur@gmail.com"
-        class="hover:text-highlight cursor-pointer transition-colors">coolemur@gmail.com</a
-      >
+      <Email />
     </div>
   </div>
 </footer>
