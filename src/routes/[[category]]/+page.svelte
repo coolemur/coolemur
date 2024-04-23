@@ -33,14 +33,27 @@
     }
   }
 
-  // let topics;
+  /** @type {HTMLDivElement} */
+  let topics;
 
-  // $effect(() => {
-  //   if (topics.scrollWidth > topics.clientWidth) {
-  //     topics.classList.add('scroll-fade');
-  //   }
-  // });
+  function fadeTopics() {
+    if (topics.scrollWidth > topics.clientWidth) {
+      topics.classList.add('topics-fade');
+    } else {
+      topics.classList.remove('topics-fade');
+    }
+  }
+
+  $effect(() => {
+    fadeTopics();
+  });
+
+  const resize = () => {
+    fadeTopics();
+  };
 </script>
+
+<svelte:window on:resize={resize} />
 
 <section class="relative flex h-[400px] justify-center bg-[#212529] text-white">
   <WavyBackground />
@@ -57,8 +70,10 @@
     </h1>
     <h2 class="text-4xl font-bold">Topics</h2>
 
-    <!-- bind:this={topics} -->
-    <div class="text-dark-gray relative -mx-4 mt-4 -mb-4 flex gap-5 overflow-scroll py-4 px-4">
+    <div
+      class="topics text-dark-gray relative -mx-4 mt-4 -mb-4 flex gap-5 overflow-scroll py-4 px-4"
+      bind:this={topics}
+    >
       <a
         class={`${!data.currentCategory ? 'text-highlight after:bg-highlight cursor-default after:content-none' : 'after:bg-dark-gray'} relative text-xl first-letter:uppercase after:absolute after:bottom-0  after:left-0 after:h-[2px] after:w-full after:scale-x-[0] after:transition-transform after:content-[''] hover:after:scale-x-[1]`}
         href="/"
@@ -110,3 +125,27 @@
     </div>
   </div>
 </section>
+
+<style>
+  .topics {
+    scrollbar-width: none;
+  }
+
+  .topics::-webkit-scrollbar {
+    display: none;
+  }
+
+  .topics-fade {
+    position: relative;
+  }
+
+  .topics-fade::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f8f9fa);
+  }
+</style>
