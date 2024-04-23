@@ -7,6 +7,9 @@
   --color-paper-light: #f8f9fa;
   --color-dark-gray: #495057;
 
+  --color-secondary: #008080;
+  --color-secondary-dark: #004d4d;
+
   --font-family-lora: 'lora', 'sans-serif';
   --font-family-roboto: 'roboto', 'sans-serif';
 }

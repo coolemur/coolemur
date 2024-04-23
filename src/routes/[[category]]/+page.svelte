@@ -83,7 +83,7 @@
     <div class="mt-16 flex justify-center">
       {#if !data.pageEnd && data.showMoreEnabled}
         <button
-          class="group bg-highlight hover:bg-highlight-dark flex transform-gpu cursor-pointer items-center gap-3 rounded-lg py-3 px-8 text-xl font-bold text-white shadow-lg transition hover:scale-105 hover:shadow-xl"
+          class="group hover:bg-secondary bg-secondary-dark flex transform-gpu cursor-pointer items-center gap-3 rounded-lg py-3 px-8 text-xl font-bold text-white shadow-lg transition hover:scale-105 hover:shadow-xl"
           on:click={() => handleShow(data.showMore)}
         >
           {#if data.showMore}
