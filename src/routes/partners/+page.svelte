@@ -1,0 +1,5 @@
+<script>
+  import InnerLayout from '$lib/layouts/InnerLayout.svelte';
+</script>
+
+<InnerLayout title="Partners"></InnerLayout>
