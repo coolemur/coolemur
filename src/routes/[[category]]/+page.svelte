@@ -4,7 +4,7 @@
   import { goto } from '$app/navigation';
 
   /** @type {import('./$types').PageData} */
-  export let data;
+  let { data } = $props();
 
   let uniqueCategories = new Set();
   data.categories.forEach((c) => uniqueCategories.add(c));
@@ -32,6 +32,14 @@
       handleShowLess();
     }
   }
+
+  // let topics;
+
+  // $effect(() => {
+  //   if (topics.scrollWidth > topics.clientWidth) {
+  //     topics.classList.add('scroll-fade');
+  //   }
+  // });
 </script>
 
 <section class="relative flex h-[400px] justify-center bg-[#212529] text-white">
@@ -48,7 +56,9 @@
       Crafting Digital Dreams
     </h1>
     <h2 class="text-4xl font-bold">Topics</h2>
-    <div class="text-dark-gray mt-8 flex gap-5">
+
+    <!-- bind:this={topics} -->
+    <div class="text-dark-gray relative -mx-4 mt-4 -mb-4 flex gap-5 overflow-scroll py-4 px-4">
       <a
         class={`${!data.currentCategory ? 'text-highlight after:bg-highlight cursor-default after:content-none' : 'after:bg-dark-gray'} relative text-xl first-letter:uppercase after:absolute after:bottom-0  after:left-0 after:h-[2px] after:w-full after:scale-x-[0] after:transition-transform after:content-[''] hover:after:scale-x-[1]`}
         href="/"
