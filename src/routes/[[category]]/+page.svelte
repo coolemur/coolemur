@@ -1,6 +1,7 @@
 <script>
   import PostCard from '$lib/components/PostCard.svelte';
   import WavyBackground from '$lib/components/ui/WavyBackground.svelte';
+  import OverflowFader from '$lib/components/OverflowFader.svelte';
   import { goto } from '$app/navigation';
 
   /** @type {import('./$types').PageData} */
@@ -32,28 +33,7 @@
       handleShowLess();
     }
   }
-
-  /** @type {HTMLDivElement} */
-  let topics;
-
-  function fadeTopics() {
-    if (topics.scrollWidth > topics.clientWidth) {
-      topics.classList.add('topics-fade');
-    } else {
-      topics.classList.remove('topics-fade');
-    }
-  }
-
-  $effect(() => {
-    fadeTopics();
-  });
-
-  const resize = () => {
-    fadeTopics();
-  };
 </script>
-
-<svelte:window on:resize={resize} />
 
 <section class="relative flex h-[400px] justify-center bg-[#212529] text-white">
   <WavyBackground />
@@ -70,24 +50,23 @@
     </h1>
     <h2 class="text-4xl font-bold">Topics</h2>
 
-    <div
-      class="topics text-dark-gray relative -mx-4 mt-4 -mb-4 flex gap-5 overflow-scroll py-4 px-4"
-      bind:this={topics}
-    >
-      <a
-        class={`${!data.currentCategory ? 'text-highlight after:bg-highlight cursor-default after:content-none' : 'after:bg-dark-gray'} relative text-xl first-letter:uppercase after:absolute after:bottom-0  after:left-0 after:h-[2px] after:w-full after:scale-x-[0] after:transition-transform after:content-[''] hover:after:scale-x-[1]`}
-        href="/"
-        data-sveltekit-noscroll>All</a
-      >
-
-      {#each uniqueCategories as category}
+    <OverflowFader>
+      <div class="topics text-dark-gray relative -mx-4 mt-4 -mb-4 flex gap-5 py-4 px-4">
         <a
-          class={`${data.currentCategory === category ? 'text-highlight after:bg-highlight cursor-default after:content-none' : 'after:bg-dark-gray'} relative text-xl first-letter:uppercase after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-[0] after:transition-transform after:content-[''] hover:after:scale-x-[1]`}
-          href={`/${category}`}
-          data-sveltekit-noscroll>{category}</a
+          class={`${!data.currentCategory ? 'text-highlight after:bg-highlight cursor-default after:content-none' : 'after:bg-dark-gray'} relative text-xl first-letter:uppercase after:absolute after:bottom-0  after:left-0 after:h-[2px] after:w-full after:scale-x-[0] after:transition-transform after:content-[''] hover:after:scale-x-[1]`}
+          href="/"
+          data-sveltekit-noscroll>All</a
         >
-      {/each}
-    </div>
+
+        {#each uniqueCategories as category}
+          <a
+            class={`${data.currentCategory === category ? 'text-highlight after:bg-highlight cursor-default after:content-none' : 'after:bg-dark-gray'} relative text-xl first-letter:uppercase after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-[0] after:transition-transform after:content-[''] hover:after:scale-x-[1]`}
+            href={`/${category}`}
+            data-sveltekit-noscroll>{category}</a
+          >
+        {/each}
+      </div>
+    </OverflowFader>
 
     <div class="mt-8 grid grid-cols-1 gap-x-5 gap-y-12 sm:grid-cols-2 xl:grid-cols-4">
       {#each data.posts as { date, title, description, category, slug, image }}
@@ -125,27 +104,3 @@
     </div>
   </div>
 </section>
-
-<style>
-  .topics {
-    scrollbar-width: none;
-  }
-
-  .topics::-webkit-scrollbar {
-    display: none;
-  }
-
-  .topics-fade {
-    position: relative;
-  }
-
-  .topics-fade::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 2rem;
-    height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f8f9fa);
-  }
-</style>
