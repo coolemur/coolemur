@@ -19,6 +19,7 @@
   }
 
   .overflow-fader::after {
+    pointer-events: none;
     content: '';
     position: absolute;
     top: 0;
