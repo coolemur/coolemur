@@ -149,6 +149,7 @@
     width: 100%;
     height: 2px;
     left: 0;
+    bottom: -2px;
     background: #d4a373;
     transition: transform 0.3s;
     transform: scaleX(0);
