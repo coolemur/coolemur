@@ -53,14 +53,14 @@
     <OverflowFader>
       <div class="topics text-dark-gray relative -mx-4 mt-4 -mb-4 flex gap-5 py-4 px-4">
         <a
-          class={`${!data.currentCategory ? 'text-highlight after:bg-highlight cursor-default after:content-none' : 'after:bg-dark-gray'} relative text-xl first-letter:uppercase after:absolute after:bottom-0  after:left-0 after:h-[2px] after:w-full after:scale-x-[0] after:transition-transform after:content-[''] hover:after:scale-x-[1]`}
+          class={`${!data.currentCategory ? 'text-highlight after:bg-highlight cursor-default after:content-none' : 'after:bg-dark-gray'} relative text-xl first-letter:uppercase after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:scale-x-[0] after:transition-transform after:content-[''] hover:after:scale-x-[1]`}
           href="/"
           data-sveltekit-noscroll>All</a
         >
 
         {#each uniqueCategories as category}
           <a
-            class={`${data.currentCategory === category ? 'text-highlight after:bg-highlight cursor-default after:content-none' : 'after:bg-dark-gray'} relative text-xl first-letter:uppercase after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-[0] after:transition-transform after:content-[''] hover:after:scale-x-[1]`}
+            class={`${data.currentCategory === category ? 'text-highlight after:bg-highlight cursor-default after:content-none' : 'after:bg-dark-gray'} relative text-xl first-letter:uppercase after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:scale-x-[0] after:transition-transform after:content-[''] hover:after:scale-x-[1]`}
             href={`/${category}`}
             data-sveltekit-noscroll>{category}</a
           >
@@ -104,3 +104,13 @@
     </div>
   </div>
 </section>
+
+<style>
+  .topics a:after {
+    transform: scaleX(0);
+  }
+
+  .topics a:hover:after {
+    transform: scaleX(1);
+  }
+</style>
