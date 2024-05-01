@@ -44,7 +44,7 @@
 >
   <div class="w-full max-w-[90%]">
     <h1
-      class="bg-paper-light absolute -top-16 max-w-[800px] rounded-t-lg p-8 pr-16 text-4xl font-bold leading-tight text-white shadow-[0px_40px_15px_-25px_rgba(0,50,150,0.4)_inset] [text-shadow:_2px_2px_10px_rgb(255_10_40_/_90%)] lg:text-6xl"
+      class="bg-paper-light absolute -top-16 max-w-[800px] text-balance rounded-t-lg p-8 pr-16 text-4xl font-bold leading-tight text-white shadow-[0px_40px_15px_-25px_rgba(0,50,150,0.4)_inset] [text-shadow:_2px_2px_10px_rgb(255_10_40_/_90%)] lg:text-6xl"
     >
       Crafting Digital Dreams
     </h1>

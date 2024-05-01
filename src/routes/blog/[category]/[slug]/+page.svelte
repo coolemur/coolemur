@@ -86,6 +86,7 @@
     margin-bottom: 1.5rem;
     padding: 0;
     font-weight: 700;
+    text-wrap: balance;
   }
 
   :global(
