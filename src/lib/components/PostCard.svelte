@@ -26,15 +26,15 @@
         {src}
         loading="lazy"
       />
-      <div class="mt-4 pt-4 px-5 pb-12">
-        <span class="font-roboto text-sm text-[#6C757D]">{date}</span>
+      <div class="flex flex-col p-6 pt-4 pb-12">
+        <span class="font-roboto self-end text-sm text-[#6C757D]/40">{date}</span>
         <h3
-          class="text-dark-gray group-hover:text-highlight mt-3 text-balance text-2xl font-bold transition-colors ease-in"
+          class="text-dark-gray group-hover:text-highlight mt-6 text-balance text-2xl font-bold transition-colors ease-in"
         >
           {title || '???'}
         </h3>
 
-        <p class="mt-3 text-balance text-lg text-[#6C757D]">
+        <p class="mt-2 text-balance text-lg text-[#6C757D]">
           {description || '???'}
         </p>
       </div>

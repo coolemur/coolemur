@@ -16,15 +16,15 @@
     <enhanced:img class="h-full w-full object-cover" alt="Blog Image1" {src} loading="lazy" />
     />
   </div>
-  <div class="relative flex max-w-[33rem] flex-col items-center gap-8">
+  <div class="relative flex max-w-[33rem] flex-col items-center gap-4">
     <a
       href="/{data.meta.category}"
       class="hover:text-highlight font-roboto rounded-lg bg-white/15 py-1 px-3 text-sm font-bold uppercase transition-colors"
       >{data.meta.category}</a
     >
-    <h1 class="text-center text-3xl font-bold">{data.meta.title}</h1>
-    <p class="text-paper text-center text-lg">{data.meta.description}</p>
-    <span class="text-sm font-bold">By Coolemur</span>
+    <h1 class="mt-3 text-center text-3xl font-bold text-white/90">{data.meta.title}</h1>
+    <p class="text-paper text-center text-lg text-white/90">{data.meta.description}</p>
+    <span class="self-right mt-6 text-sm font-bold text-white/30">By Coolemur</span>
   </div>
 </section>
 

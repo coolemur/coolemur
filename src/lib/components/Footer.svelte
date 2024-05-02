@@ -29,8 +29,8 @@
   <div
     class="relative flex w-full max-w-[90%] flex-col justify-between gap-y-8 pr-[20%] lg:flex-row xl:pr-[30%]"
   >
-    <div class="mr-8 flex flex-col gap-1 md:gap-3">
-      <span class="mb-2 text-xl font-bold">Explore</span>
+    <div class="mr-8 flex flex-col gap-1 md:gap-2">
+      <span class="mb-4 text-xl font-bold">Explore</span>
       <a class="hover:text-highlight cursor-pointer transition-colors" href="/partners">Partners</a>
       <a class="hover:text-highlight cursor-pointer transition-colors" href="/job-opportunities"
         >Job Opportunities</a
@@ -39,14 +39,14 @@
         >Advertise</a
       >
     </div>
-    <div class="mr-8 flex flex-col gap-1 md:gap-3">
-      <span class="mb-2 text-xl font-bold">Headquarter</span>
+    <div class="mr-8 flex flex-col gap-1 md:gap-2">
+      <span class="mb-4 text-xl font-bold">Headquarter</span>
       <span>123 Electric Avenue,</span>
       <span>CyberTown, Neo-Genesis 50789</span>
       <span>Futuristica</span>
     </div>
-    <div class="mr-8 flex flex-col gap-1 md:gap-3">
-      <span class="mb-2 text-xl font-bold">Contact the Publisher</span>
+    <div class="mr-8 flex flex-col gap-1 md:gap-2">
+      <span class="mb-4 text-xl font-bold">Contact the Publisher</span>
       <Email />
     </div>
   </div>
