@@ -41,7 +41,7 @@
     </div>
   </div>
   <a
-    class="group bg-highlight hover:bg-highlight-dark mt-16 flex transform-gpu transform-gpu cursor-pointer items-center gap-3 rounded-lg py-3 px-8 text-xl font-bold text-white shadow-lg transition hover:scale-105 hover:shadow-xl"
+    class="group group hover:bg-secondary bg-secondary-dark mt-16 flex transform-gpu transform-gpu cursor-pointer items-center gap-3 rounded-lg py-3 px-8 text-xl font-bold text-white shadow-lg transition hover:scale-105 hover:shadow-xl"
     href="/"
   >
     <svg
