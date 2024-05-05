@@ -25,7 +25,9 @@
       ></div>
       <div class="absolute py-10 px-5">
         <span class="font-roboto text-sm">{date}</span>
-        <h3 class="group-hover:text-highlight mt-3 text-2xl font-bold transition-colors ease-in">
+        <h3
+          class="group-hover:text-highlight-dark mt-3 text-2xl font-bold transition-colors ease-in"
+        >
           {title || '???'}
         </h3>
 

@@ -16,7 +16,7 @@
         aria-label="Github - Coolemur"
         rel="noopener noreferrer"
       >
-        <svg class="hover:fill-highlight fill-white transition-colors" viewBox="-3 -3 30 30">
+        <svg class="hover:fill-highlight-dark fill-white transition-colors" viewBox="-3 -3 30 30">
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"

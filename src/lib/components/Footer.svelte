@@ -31,11 +31,14 @@
   >
     <div class="mr-8 flex flex-col gap-1 md:gap-2">
       <span class="mb-4 text-xl font-bold">Explore</span>
-      <a class="hover:text-highlight cursor-pointer transition-colors" href="/partners">Partners</a>
-      <a class="hover:text-highlight cursor-pointer transition-colors" href="/job-opportunities"
-        >Job Opportunities</a
+      <a class="hover:text-highlight-dark cursor-pointer transition-colors" href="/partners"
+        >Partners</a
       >
-      <a class="hover:text-highlight cursor-pointer transition-colors" href="/advertise"
+      <a
+        class="hover:text-highlight-dark cursor-pointer transition-colors"
+        href="/job-opportunities">Job Opportunities</a
+      >
+      <a class="hover:text-highlight-dark cursor-pointer transition-colors" href="/advertise"
         >Advertise</a
       >
     </div>

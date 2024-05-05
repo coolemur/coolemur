@@ -17,7 +17,7 @@
     >
       {title}
     </h1>
+
+    <slot />
   </div>
 </section>
-
-<slot />

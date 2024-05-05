@@ -19,7 +19,7 @@
   <div class="relative flex max-w-[33rem] flex-col items-center gap-4">
     <a
       href="/{data.meta.category}"
-      class="hover:text-highlight font-roboto rounded-lg bg-white/15 py-1 px-3 text-sm font-bold uppercase transition-colors"
+      class="hover:text-highlight-dark font-roboto rounded-lg bg-white/15 py-1 px-3 text-sm font-bold uppercase transition-colors"
       >{data.meta.category}</a
     >
     <h1 class="mt-3 text-center text-3xl font-bold text-white/90">{data.meta.title}</h1>
@@ -187,7 +187,7 @@
 
   :global(article a:has(img):hover) {
     display: block;
-    outline: 2px solid var(--color-highlight);
+    outline: 2px solid var(--color-highlight-dark);
     max-width: fit-content;
 
     transition: outline 0.1s ease-out;
@@ -217,9 +217,9 @@
 
   :global(article pre[class*='language-']) {
     border-radius: 0.5rem;
-    border-left: 2px solid var(--color-highlight-dark);
+    border-left: 2px solid var(--color-highlight);
     box-shadow:
-      -1px 0 0 0 var(--color-highlight),
+      -1px 0 0 0 var(--color-highlight-dark),
       0 0 0 1px #dfdfdf;
   }
 
