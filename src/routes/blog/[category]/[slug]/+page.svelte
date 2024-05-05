@@ -73,6 +73,7 @@
             href={`/blog/${category}/${slug}`}
             {slug}
             {image}
+            {category}
           />
         {/each}
       </div>
