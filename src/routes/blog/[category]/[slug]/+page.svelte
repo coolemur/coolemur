@@ -258,4 +258,11 @@
     bottom: 0;
     left: 0;
   }
+
+  :global(article .content code) {
+    color: #157ea1;
+    background-color: rgba(0, 100, 100, 0.05);
+    padding: 0.1rem 0.25rem;
+    border-radius: 0.3rem;
+  }
 </style>

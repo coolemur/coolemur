@@ -8,7 +8,7 @@
   import { getImage } from '$lib/utils/images';
 
   /** @type {PostCardProps} */
-  let { date, title, description, href, slug, image } = $props();
+  let { date, title, description, href, slug, image, category } = $props();
 
   let src = $derived(getImage(image, 'sm') || imageNotFound);
 </script>
@@ -16,7 +16,7 @@
 <CardContainer>
   <CardBody>
     <a
-      class="group flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-2xl"
+      class="group relative flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-2xl"
       {href}
       transition:scale={{ duration: 400, delay: 0, opacity: 0.5, start: 0, easing: quintOut }}
     >
@@ -38,6 +38,10 @@
           {description || '???'}
         </p>
       </div>
+      <span
+        class="group-hover:text-highlight-dark font-roboto absolute top-0 right-0 rounded-lg rounded-tl-none rounded-br-none bg-white/50 py-1 px-3 text-sm font-bold uppercase transition-colors"
+        >{category}</span
+      >
     </a>
   </CardBody>
 </CardContainer>
