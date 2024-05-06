@@ -7,6 +7,35 @@
   let { data } = $props();
 
   let src = $derived(getImage(data.meta.image, 'lg') || imageNotFound);
+
+  /**
+   * Updates the scroll status of a block element.
+   * @param {HTMLElement} block - The block element to update.
+   */
+  const updateScrollStatus = (block) => {
+    if (block.scrollHeight - block.scrollTop <= block.clientHeight + 10) {
+      block.classList.remove('has-more-to-scroll');
+    } else {
+      block.classList.add('has-more-to-scroll');
+    }
+  };
+
+  $effect(() => {
+    /**
+     * @type {NodeListOf<HTMLElement>}
+     */
+    const codeBlocks = document.querySelectorAll('pre code');
+    codeBlocks.forEach((block) => {
+      updateScrollStatus(block);
+      block.addEventListener('scroll', () => updateScrollStatus(block));
+    });
+
+    return () => {
+      codeBlocks.forEach((block) => {
+        block.removeEventListener('scroll', () => updateScrollStatus(block));
+      });
+    };
+  });
 </script>
 
 <section class="relative flex justify-center overflow-hidden bg-[#212529] pt-28 pb-20 text-white">
@@ -247,8 +276,7 @@
   }
 
   /* Code fade to indicate that there is something to scroll */
-
-  :global(article .content pre code:after) {
+  :global(article .content pre code.has-more-to-scroll:after) {
     pointer-events: none;
     content: '';
     display: block;
@@ -260,6 +288,7 @@
     left: 0;
   }
 
+  /* Inline code */
   :global(article .content code) {
     color: #157ea1;
     background-color: rgba(0, 100, 100, 0.05);

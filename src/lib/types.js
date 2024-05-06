@@ -6,4 +6,5 @@
  * @property {string} href
  * @property {string} slug
  * @property {string} image
+ * @property {string} category
  */
