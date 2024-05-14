@@ -42,17 +42,21 @@
     <OverflowFader>
       <div class="topics text-dark-gray relative -mx-4 mt-4 -mb-4 flex gap-5 py-4 px-4">
         <a
-          class={`${!data.currentCategory ? 'text-highlight-dark after:bg-highlight-dark cursor-default after:content-none' : 'after:bg-dark-gray'} relative text-xl first-letter:uppercase after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:scale-x-[0] after:transition-transform after:content-[''] hover:after:scale-x-[1]`}
+          class={`${!data.currentCategory ? 'cursor-default bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg' : 'text-dark-gray bg-gray-200 shadow-md'} relative rounded-lg py-2 px-4 text-xl transition-colors transition-transform first-letter:uppercase hover:scale-105 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white`}
           href="/"
-          data-sveltekit-noscroll>All</a
+          data-sveltekit-noscroll
         >
+          All
+        </a>
 
         {#each uniqueCategories as category}
           <a
-            class={`${data.currentCategory === category ? 'text-highlight-dark after:bg-highlight-dark cursor-default after:content-none' : 'after:bg-dark-gray'} relative text-xl first-letter:uppercase after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-full after:scale-x-[0] after:transition-transform after:content-[''] hover:after:scale-x-[1]`}
+            class={`${data.currentCategory === category ? 'cursor-default bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg' : 'text-dark-gray bg-gray-200 shadow-md'} relative rounded-lg py-2 px-4 text-xl transition-colors transition-transform first-letter:uppercase hover:scale-105 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white`}
             href={`/${category}`}
-            data-sveltekit-noscroll>{category}</a
+            data-sveltekit-noscroll
           >
+            {category}
+          </a>
         {/each}
       </div>
     </OverflowFader>

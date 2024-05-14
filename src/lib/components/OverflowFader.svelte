@@ -24,7 +24,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 2rem;
+    width: 8rem;
     height: 100%;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), #f8f9fa);
   }
