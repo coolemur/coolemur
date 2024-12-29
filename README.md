@@ -7,3 +7,7 @@
 ## Blog
 
 [https://coolemur.vercel.app/](https://coolemur.vercel.app/)
+
+## Landing
+
+[https://coolemur-landing.vercel.app/](https://coolemur-landing.vercel.app/)
