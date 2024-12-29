@@ -6,8 +6,8 @@
 
 ## Blog
 
-[https://coolemur.vercel.app/](https://coolemur.vercel.app/)
+<a href="https://coolemur.vercel.app/" target="_blank">https://coolemur.vercel.app/</a>
 
 ## Landing
 
-[https://coolemur-landing.vercel.app/](https://coolemur-landing.vercel.app/)
+<a href="https://coolemur-landing.vercel.app/" target="_blank">https://coolemur-landing.vercel.app/</a>
