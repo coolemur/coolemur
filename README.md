@@ -6,10 +6,8 @@
 
 ## Blog
 
-<a href="https://coolemur.vercel.app/" target="_blank">https://coolemur.vercel.app/</a>  
-
-[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
+[https://coolemur.vercel.app/](https://coolemur.vercel.app/) 
 
 ## Landing
 
-<a href="https://coolemur-landing.vercel.app/" target="_blank">https://coolemur-landing.vercel.app/</a>
+[https://coolemur-landing.vercel.app/](https://coolemur-landing.vercel.app/)
