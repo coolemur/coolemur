@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://coolemur.vercel.app/_app/immutable/assets/logo.Bmt4Ll1Q.png" alt="Logo" width="100">
+    <img src="https://coolemur.vercel.app/_app/immutable/assets/logo.Bmt4Ll1Q.png" alt="Logo" width="150">
 </div>
 
 # Pro 🫧
