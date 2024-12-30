@@ -11,15 +11,3 @@
 ## Landing
 
 [https://coolemur-landing.vercel.app/](https://coolemur-landing.vercel.app/)
-
-Test
-
-<div style="font-family: Arial, sans-serif;">
-This text will appear in Arial.
-</div>
-
-<div style="font-family: Verdana, sans-serif;">
-This text uses the Verdana font.
-</div>
-
-<span style="font-family: 'Courier New', monospace;">Inline font change example.</span>
