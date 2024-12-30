@@ -1,5 +1,9 @@
 ![Logo](https://coolemur.vercel.app/_app/immutable/assets/logo.Bmt4Ll1Q.png)
 
+<div align="center">
+    <img src="https://coolemur.vercel.app/_app/immutable/assets/logo.Bmt4Ll1Q.png" alt="Logo" width="400">
+</div>
+
 # Pro 🫧
 
 - Computer science
