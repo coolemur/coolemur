@@ -1,3 +1,5 @@
+![Logo](https://coolemur.vercel.app/_app/immutable/assets/logo.Bmt4Ll1Q.png)
+
 # Pro 🫧
 
 - Computer science
@@ -11,3 +13,4 @@
 ## Landing
 
 [https://coolemur-landing.vercel.app/](https://coolemur-landing.vercel.app/)
+
